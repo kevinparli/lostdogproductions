@@ -1,0 +1,278 @@
+<html>
+<html>
+  <nav>
+    <ul id='navbar'>
+      <li><a href="#welcome-section">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact-info">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="welcome-section">
+    <h1>Hello.</h1>
+    <h2 id="welcome-header" class="header">My name is Kevin</h2>
+    <p>I am practicing to become a web developer</p>
+  </div>
+
+  <div id="projects">
+    <div id="project-header" class="header">
+      <h2>Here are some of my projects...</h2>
+    </div>
+    <div id="project-container">
+      <div id="project1" class="project-tile">
+        <a href="https://codepen.io/anon/pen/PLoKEB?editors=1100#0" target="_blank">
+      <img class="project-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/784px-N.Tesla.JPG" alt="Bust of Nikola Tesla"></a>
+        <div id="project1title" class="project-title">
+          <p>Tribute Page to Nikola Tesla</p>
+        </div>
+      </div>
+      <div id="project2" class="project-tile">
+        <a href="https://codepen.io/anon/pen/OqJZKd?editors=1100" target="_blank">
+      <img class="project-img" src="https://www.publicdomainpictures.net/pictures/140000/nahled/survey-check-list.jpg" alt="A mock survey"></a>
+        <div id="project2title" class="project-title">
+          <p>Imaginary Survey</p>
+        </div>
+      </div>
+      <div id="project3" class="project-tile">
+        <a href="https://codepen.io/anon/pen/JzdaRg?editors=1100" target="_blank">
+      <img class="project-img" src="https://us.123rf.com/450wm/bokononist/bokononist1404/bokononist140400001/27373867-stock-vector-stylized-jumping-border-collie.jpg?ver=6" alt="Two Border Collie dogs playing"></a>
+        <div id="project3title" class="project-title">
+          <p>Fake Product Landing Page</p>
+        </div>
+      </div>
+      <div id="project4" class="project-tile">
+        <a href="https://codepen.io/anon/pen/PLqrJo?editors=1100" target="_blank">
+      <img class="project-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Coffee_plant.jpg" alt="Harvesting Coffee Beans"></a>
+        <div id="project4title" class="project-title">
+          <p>Mock Technical Documentation</p>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.freecodecamp.org/lost_dog" id="profile-link" target="_blank">Visit My FCC Portfolio</a>
+  </div>
+
+  <div id="contact-info">
+    <div id="contact-header" class="header">
+      <h2>Let's Get Together!</h2>
+      <p>We can get coffee ... sushi ... or Taco Bell. Doesn't bother me at all!</p>
+    </div>
+    <div id="contact-container">
+      <a href="https://www.facebook.com/that.damn.bohemian" target="_blank" class="contact">Facebook</a>
+      <a href="https://www.freecodecamp.org/lost_dog" target="_blank" class="contact">FreeCodeCamp</a>
+      <a href="https://facebook.com/freecodecamp" target="_blank" class="contact">Codepen.io</a>
+      <a href="https://facebook.com/freecodecamp" target="_blank" class="contact">GitHub</a>
+            
+    </div>
+  </div>
+  <footer>
+    <p>All the projects were test projects created for <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a>.</p>
+    <p>&copy; Lost Dog Productions 2019</p>
+  </footer>
+  </>
+</html>
+
+<style>
+
+body {
+  background-color: lightgray;
+  border-style: none;
+}
+
+nav {
+  text-align: right;
+  background-color: lightgray;
+  border-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-decoration: none;
+
+  ul {
+    list-style-type: none;
+    margin: 20;
+    padding: 0;
+    word-spacing: 30px;
+
+    li {
+      display: inline;
+    }
+    li a {
+      text-decoration: none;
+      color: #000000;
+      padding-right: 20px;
+      font-size: 150%;
+    }
+  }
+}
+#welcome-section {
+  text-align: center;
+  background: lightgray;
+  min-height: 55vh;
+  padding-top: 45vh;
+
+  h1 {
+    color: red;
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes rainbow {
+  12.5% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  37.5% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  62.5% {
+    color: blue;
+  }
+  75% {
+    color: indigo;
+  }
+  87.5% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+#projects {
+  background-color: white;
+  border-style: none;
+  font-family: arial;
+}
+.project-tile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  border-color: none;
+}
+
+.project-title {
+  text-align: center;
+}
+#project-container {
+  background-color: white;
+  padding: 40px 0px;
+  font-size: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+
+  @media (max-width: 420px) {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+#profile-link {
+  text-align: center;
+  display: block;
+  width: 250px;
+  height: 30px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.header {
+  text-align: center;
+  background-color: none;
+}
+
+#contact-info {
+  background-color: clear;
+  margin-top: 70px;
+}
+
+#contact-container {
+  border-style: none;
+  background-color: clear;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.contact {
+  font-size: 50%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  list-style-type: none;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 90px;
+  background-color: white;
+  width: 100%;
+}
+
+#project1 {
+  background-color: none;
+  width: 100%;
+}
+#project2 {
+  background-color: none;
+  width: 100%;
+}
+#project3 {
+  background-color: none;
+  width: 100%;
+}
+#project4 {
+  background-color: none;
+  width: 100%;
+}
+
+#contact1 {
+  background-color: lightskyblue;
+  width: 100%;
+}
+#contact2 {
+  background-color: paleturquoise;
+  width: 100%;
+}
+#contact3 {
+  background-color: lightpink;
+  width: 100%;
+}
+#contact4 {
+  background-color: palegreen;
+  width: 100%;
+}
+
+.project-img {
+  max-height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 420px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+</style>
